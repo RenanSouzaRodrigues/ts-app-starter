@@ -1,0 +1,2 @@
+# TypeScript Docker Application Starter
+
