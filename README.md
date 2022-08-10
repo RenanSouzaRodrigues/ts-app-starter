@@ -1,4 +1,4 @@
-# TypeScript Docker Application Starter
+# TypeScript Application Starter
 
 This application aims to help you structure your applications using TypeScript in a faster and easier way.
 
