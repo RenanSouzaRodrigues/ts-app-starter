@@ -32,6 +32,9 @@ touch src/app.ts
 echo 'console.log("My Application v1.0.0");' > src/app.ts
 echo "Done!"
 
+#delete scaffold folder
+rm -rf ./scaffold
+
 #update the initial readme
 echo "Updating your README file"
 echo '# My TypeScript Application v1.0.0' > README.md
