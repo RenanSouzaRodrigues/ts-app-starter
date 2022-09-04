@@ -8,7 +8,7 @@ function delete_bootstrap_files {
 }
 
 function generate_express_application {
-    echo "Generating folder from scaffold"
+    echo "Generating folders from scaffold"
     cp -r ./scaffold/ts/express-app/* ./
     echo "Done!"
 
@@ -26,9 +26,7 @@ function generate_express_application {
 function set_git_initial_config {
     echo "Setting git configs"
     git init
-    if [ -n "$2" ]; then
-        git remote add origin $2
-    fi
+    git remote add origin $2
     echo "Done!"
 }
 
