@@ -7,7 +7,7 @@ function delete_bootstrap_files {
 
 function generate_express_application {
     echo "Generating folder from scaffold"
-    cp -r ./scaffold/ts/express-app ./
+    cp -r ./scaffold/ts/express-app/* ./
     echo "Done!"
 
     echo "Removing .gitkeep files"
