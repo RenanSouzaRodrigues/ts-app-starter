@@ -32,10 +32,9 @@ function set_git_initial_config {
 
 if [ $1 = "express" ]; then
     generate_express_application;
+    delete_bootstrap_files
+    set_git_initial_config
 fi
-
-delete_bootstrap_files
-set_git_initial_config
 
 echo 'Setup process is done! Now you can start writing some code. Have fun!'
 
