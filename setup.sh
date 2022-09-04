@@ -1,3 +1,5 @@
+#! bash/sh
+
 function delete_bootstrap_files {
     echo "Removing bootstrap files from the application"
     rm -rf .git
@@ -17,7 +19,7 @@ function generate_express_application {
     echo "Done!"
 
     echo "Installing dependencies"
-    yarn istall
+    yarn install
     echo "Done!"
 }
 
@@ -25,7 +27,7 @@ function set_git_initial_config {
     echo "Setting git configs"
     git init
     if [ -n "$2" ]; then
-        git remoted add origin $2
+        git remote add origin $2
     fi
     echo "Done!"
 }
