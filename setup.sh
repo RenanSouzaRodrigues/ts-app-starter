@@ -35,6 +35,7 @@ if [ $1 = "express" ]; then
 fi
 
 delete_bootstrap_files
+set_git_initial_config
 
 echo 'Setup process is done! Now you can start writing some code. Have fun!'
 
