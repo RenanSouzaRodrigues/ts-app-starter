@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "setup": "./setup.sh express"
+    "setup": "./setup.sh"
   },
   "keywords": [],
   "author": "Renan Souza Rodrigues <renan.souza@powerpush.com.br>",
-  "license": "MIT"
+  "license": "ISC"
 }
