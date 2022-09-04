@@ -26,7 +26,7 @@ function generate_express_application {
 function set_git_initial_config {
     echo "Setting git configs"
     git init
-    git remote add origin $2
+    git remote add origin "$2"
     echo "Done!"
 }
 
