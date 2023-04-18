@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Removed
 - Removed some unnecessary files
 - Removed the git remote add process from the setup script
+- Removed the readme section that stated that you can provide a git remote repository to start the application already synced with a remote repository.
 
 ## [1.0.0]
 ### Added
