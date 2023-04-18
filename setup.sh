@@ -1,21 +1,17 @@
 #! bash/sh
 
-function delete_bootstrap_files {
-    echo "Removing bootstrap files from the application"
-    rm -rf .git
-    rm -rf ./scaffold
-    echo "Done!"
-}
-
 function generate_express_application {
     echo "Generating folders from scaffold"
     cp -r ./scaffold/ts/express-app/* ./
     echo "Done!"
 
     echo "Removing .gitkeep files"
-    rm -f ./src/app/.gitkeep
-    rm -f ./src/exceptions/.gitkeep
+    rm -f ./src/domain/.gitkeep
     rm -f ./src/types/.gitkeep
+    rm -f ./src/external/data/repositories/.gitkeep
+    rm -f ./src/external/middlewares/.gitkeep
+    rm -f ./src/types/common/.gitkeep
+    rm -f ./src/types/exceptions/.gitkeep
     echo "Done!"
 
     echo "Installing dependencies"
@@ -23,10 +19,17 @@ function generate_express_application {
     echo "Done!"
 }
 
+function delete_bootstrap_files {
+    echo "Removing bootstrap files from the application"
+    rm -rf .git
+    rm -rf ./scaffold
+    echo "Done!"
+}
+
 function set_git_initial_config {
     echo "Setting git configurations"
     git init
-    git remote add origin "$2"
+    git branch -M main
     echo "Done!"
 }
 
