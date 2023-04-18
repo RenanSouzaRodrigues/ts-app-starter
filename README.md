@@ -4,7 +4,7 @@ This script aims to help you structure your applications using TypeScript in a f
 All you need to do is run the command below and the script will do the rest.
 
 ```
-yarn setup express [git remote url]
+yarn setup express
 ```
 This script will create a brand new TypeScript Express application following the Clean Architecture design patterns and principles.
 
@@ -12,12 +12,6 @@ This script will create a brand new TypeScript Express application following the
 
 If you want to know more about Clean Architecture, please visit this <a href="https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html">link</a>.
 
-You can also provide a git remote url and the script will configure a git repo for you and set this to the provided remote url.
-
-Like this:
-```
-yarn setup express https://github.com/youraccount/yourrepo.git
-````
 ### Colaboration
 If you find any bugs, feel free to open a new Issue on this repo and I will provide a fix for it as soon as possible. 
 
